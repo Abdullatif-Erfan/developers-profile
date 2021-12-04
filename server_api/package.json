@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Abdul Latif Project",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"cd ../client && npm start\"",
+    "server": "nodemon server.js"
+  },
+  "author": "Abdul Latif Erfan",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.1",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.2",
+    "gravatar": "^1.8.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.10",
+    "passport": "^0.5.0",
+    "concurrently": "^6.3.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
